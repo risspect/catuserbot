@@ -34,6 +34,7 @@ def check(cat):
         return True
     return False
 
+
 if Config.PRIVATE_GROUP_BOT_API_ID is None:
     BOTLOG = False
     BOTLOG_CHATID = "me"
