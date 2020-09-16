@@ -34,6 +34,12 @@ def check(cat):
         return True
     return False
 
+if Config.PRIVATE_GROUP_BOT_API_ID is None:
+    BOTLOG = False
+    BOTLOG_CHATID = "me"
+else:
+    BOTLOG = True
+    BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 
 # UniBorg Telegram UseRBot
 # Copyright (C) 2020 @UniBorg
